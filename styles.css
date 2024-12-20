@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    padding: 2rem;
+}
+
+h1{
+    color: white;
+}
+
+
+.right button{
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: red;
+    border: none;
+    padding-top: .3rem;
+    cursor: pointer;
+}
+
+.search{
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(185, 177, 177);
+}
+
+.searching{
+    width: 400px;
+    max-width: 60%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.search>button{
+    background-color: red;
+    border-radius: 6px;
+    margin-left: 0.5rem;
+    color: white;
+    padding: 0.5rem;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./mover.jpg);
+    padding: 2rem;
+}
+
+.hero > h2{
+    color: white;
+    font-size: 2rem;
+    background-color: black;
+}
+
+.hero > button{
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.list{
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+.img{
+    height: 400px;
+}
+
+
+.card{
+    margin-top: 10px;
+    display: flex;
+    overflow-x: scroll;
+}
+.movies{
+    border: 10px solid rgb(177, 173, 173);
+    background-color: rgb(177, 173, 173);
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 20px;
+    border-radius: 12px;
+}
+
+.bot{
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.images{
+    max-width: 80%;
+}
+
+@media (max-width:500px){
+    .logo{
+        flex-direction: column;
+        text-align: center;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .searching{
+        max-width: 60%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .movies{
+        margin-bottom: 1.5rem;
+    }
+}
